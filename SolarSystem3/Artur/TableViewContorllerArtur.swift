@@ -54,9 +54,9 @@ class TableViewControllerArtur: UITableViewController {
 //        } else {
 //            alert += 1
 //            showAlertView(title: "Ок", message: "Попытка номер\(alert).")
-//        }
+//        }.
 
-    }
+
     private func showAlertView(title: String, message: String, textField: UITextField? = nil) {
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Закрыть", style: .default) { _ in
