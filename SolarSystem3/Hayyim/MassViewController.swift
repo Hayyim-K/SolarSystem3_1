@@ -76,7 +76,7 @@ class MassViewController: UIViewController {
         case 0.2..<0.4: numberOfPointsFromMassVC = 2
         case 0.4..<0.6: numberOfPointsFromMassVC = 3
         case 0.6..<0.8: numberOfPointsFromMassVC = 4
-        case 0.8..<1: numberOfPointsFromMassVC = 5
+        case 0.8...1: numberOfPointsFromMassVC = 5
         default: numberOfPointsFromMassVC = 0
         }
         
@@ -89,6 +89,7 @@ class MassViewController: UIViewController {
     }
     
     @IBAction func nextButtonPressed() {
+//        numberOfPointsFromNumOfSatellitesVC += numberOfPointsFromArturVC
         performSegue(withIdentifier: "radiusVC", sender: nil)
     }
     

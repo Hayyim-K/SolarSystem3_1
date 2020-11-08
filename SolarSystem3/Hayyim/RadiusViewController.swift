@@ -75,12 +75,12 @@ class RadiusViewController: UIViewController {
         let result = 1.0 - (abs(rightResult - slider.value) / slider.maximumValue)
         
         switch result {
-        case 0.1..<0.2: numberOfPointsFromMassVC = 1
-        case 0.2..<0.4: numberOfPointsFromMassVC = 2
-        case 0.4..<0.6: numberOfPointsFromMassVC = 3
-        case 0.6..<0.8: numberOfPointsFromMassVC = 4
-        case 0.8..<1: numberOfPointsFromMassVC = 5
-        default: numberOfPointsFromMassVC = 0
+        case 0.1..<0.2: numberOfPointsFromRadiusVC = 1
+        case 0.2..<0.4: numberOfPointsFromRadiusVC = 2
+        case 0.4..<0.6: numberOfPointsFromRadiusVC = 3
+        case 0.6..<0.8: numberOfPointsFromRadiusVC = 4
+        case 0.8...1: numberOfPointsFromRadiusVC = 5
+        default: numberOfPointsFromRadiusVC = 0
         }
         
         resultLabel.text = "Вы оказались близки к истине, ваш результат \(numberOfPointsFromRadiusVC)баллов!"
@@ -91,12 +91,13 @@ class RadiusViewController: UIViewController {
     }
     
     @IBAction func nextButtonPressed() {
+        numberOfPointsFromRadiusVC += numberOfPointsFromMassVC
         performSegue(withIdentifier: "satelliteVC", sender: nil)
     }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let resultVC = segue.destination as! RadiusViewController
+        let resultVC = segue.destination as! NumberOfSatellitesViewController
         resultVC.numberOfPointsFromRadiusVC = numberOfPointsFromRadiusVC
     }
     

@@ -139,6 +139,10 @@
                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Продолжить"/>
+                                <connections>
+                                    <action selector="nextButtonPressed" destination="aAe-J2-0ah" eventType="touchUpInside" id="HTt-0R-76F"/>
+                                    <segue destination="FpI-cj-Bz4" kind="show" id="X17-p6-5Vz"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-CK-imr">
                                 <rect key="frame" x="21" y="60" width="333" height="527"/>
@@ -212,15 +216,34 @@
             <objects>
                 <viewController id="FpI-cj-Bz4" customClass="NumberOfSatellitesViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pbP-tm-1cb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nightSky" translatesAutoresizingMaskIntoConstraints="NO" id="zrL-cA-eI7">
                                 <rect key="frame" x="-389" y="-691" width="1152" height="2048"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы оказались близки к истине, ваш результат ___баллов" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjz-2D-1qH">
+                                <rect key="frame" x="16" y="297" width="343" height="53"/>
+                                <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gp4-46-IC1" userLabel="Продолжить">
+                                <rect key="frame" x="123.5" y="465" width="128" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Продолжить"/>
+                                <connections>
+                                    <action selector="checkingButtonPassed" destination="U5i-23-NAk" eventType="touchUpInside" id="Nj6-WX-XWA"/>
+                                    <action selector="nextButtonPressed" destination="U5i-23-NAk" eventType="touchUpInside" id="nZ3-Ga-uZ5"/>
+                                    <action selector="nextButtonPressed" destination="FpI-cj-Bz4" eventType="touchUpInside" id="wTA-bh-sfG"/>
+                                    <segue destination="YHs-Nm-3PS" kind="show" id="u31-Ry-Aw9"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6W-Eu-v1o">
-                                <rect key="frame" x="16" y="60" width="343" height="547"/>
+                                <rect key="frame" x="21" y="60" width="333" height="527"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Какое количество спутников у планеты \(planetList.name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOH-A3-t49">
                                         <rect key="frame" x="0.0" y="20" width="343" height="108"/>
@@ -233,13 +256,19 @@
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="auN-hB-VSG">
                                         <rect key="frame" x="-2" y="228" width="347" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="sliderAction" destination="FpI-cj-Bz4" eventType="valueChanged" id="eYs-nf-MMz"/>
+                                        </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POo-8y-iHo">
-                                        <rect key="frame" x="139" y="428" width="64" height="39"/>
+                                        <rect key="frame" x="116" y="428" width="110" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Проверить"/>
+                                        <connections>
+                                            <action selector="checkingButtonPassed" destination="FpI-cj-Bz4" eventType="touchUpInside" id="F98-jP-AyS"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="mXY-w9-szk">
                                         <rect key="frame" x="49" y="265" width="41" height="33"/>
@@ -287,16 +316,100 @@
                         <viewLayoutGuide key="safeArea" id="CVr-2Y-H8D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="gp4-46-IC1" firstAttribute="centerX" secondItem="pbP-tm-1cb" secondAttribute="centerX" id="2NH-8M-rzL"/>
+                            <constraint firstItem="Qjz-2D-1qH" firstAttribute="centerY" secondItem="pbP-tm-1cb" secondAttribute="centerY" id="FbB-AW-mIu"/>
                             <constraint firstItem="c6W-Eu-v1o" firstAttribute="centerY" secondItem="pbP-tm-1cb" secondAttribute="centerY" id="LRH-Lo-wPw"/>
+                            <constraint firstItem="Qjz-2D-1qH" firstAttribute="centerX" secondItem="pbP-tm-1cb" secondAttribute="centerX" id="VNy-zy-2yN"/>
+                            <constraint firstItem="Qjz-2D-1qH" firstAttribute="leading" secondItem="CVr-2Y-H8D" secondAttribute="leading" constant="16" id="Zxq-Rx-Xz6"/>
+                            <constraint firstItem="CVr-2Y-H8D" firstAttribute="bottom" secondItem="gp4-46-IC1" secondAttribute="bottom" constant="143" id="cVy-E9-peQ"/>
                             <constraint firstItem="c6W-Eu-v1o" firstAttribute="width" secondItem="pbP-tm-1cb" secondAttribute="height" multiplier="343:667" id="ego-WJ-DNr"/>
                             <constraint firstItem="c6W-Eu-v1o" firstAttribute="centerX" secondItem="pbP-tm-1cb" secondAttribute="centerX" id="m2S-zs-iyn"/>
+                            <constraint firstItem="CVr-2Y-H8D" firstAttribute="trailing" secondItem="Qjz-2D-1qH" secondAttribute="trailing" constant="16" id="oV6-Z6-76y"/>
                             <constraint firstItem="c6W-Eu-v1o" firstAttribute="top" secondItem="CVr-2Y-H8D" secondAttribute="top" constant="60" id="si3-VT-gDI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gm7-sq-erq"/>
+                    <connections>
+                        <outlet property="contentView" destination="c6W-Eu-v1o" id="cBg-ry-Xht"/>
+                        <outlet property="nextButton" destination="gp4-46-IC1" id="wlG-R2-zCw"/>
+                        <outlet property="questionLabel" destination="fOH-A3-t49" id="zJM-vf-R8g"/>
+                        <outlet property="resultLabel" destination="Qjz-2D-1qH" id="YEx-cq-iQS"/>
+                        <outlet property="slider" destination="auN-hB-VSG" id="U2J-Ac-bcZ"/>
+                        <outlet property="sliderValueLabel" destination="uKi-s9-2gC" id="KhX-xL-ZVm"/>
+                        <outletCollection property="planets" destination="HQc-5J-1aE" collectionClass="NSMutableArray" id="Uwo-Mt-gLZ"/>
+                        <outletCollection property="planets" destination="mXY-w9-szk" collectionClass="NSMutableArray" id="YXQ-1H-pr6"/>
+                        <outletCollection property="planets" destination="cch-cx-PzX" collectionClass="NSMutableArray" id="4dC-c7-UIA"/>
+                        <outletCollection property="planets" destination="13d-Ur-aKS" collectionClass="NSMutableArray" id="huS-YA-iGB"/>
+                        <outletCollection property="planets" destination="2Gl-24-ppM" collectionClass="NSMutableArray" id="Fgh-Vs-zdD"/>
+                        <outletCollection property="planets" destination="rzv-xB-Vym" collectionClass="NSMutableArray" id="0Rp-1r-MRG"/>
+                        <outletCollection property="planets" destination="hiU-tj-Lsi" collectionClass="NSMutableArray" id="sCc-0B-K6F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WkC-u6-fFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1840.8" y="197.45127436281859"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="NcB-E5-by1">
+            <objects>
+                <viewController id="YHs-Nm-3PS" customClass="ResultsViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CCD-Hc-PA3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nightSky" translatesAutoresizingMaskIntoConstraints="NO" id="Sb1-C2-y0c">
+                                <rect key="frame" x="-389" y="-691" width="1152" height="2048"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jwu-Sd-icM">
+                                <rect key="frame" x="21" y="60" width="333" height="527"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9l-cY-lG8">
+                                        <rect key="frame" x="111.5" y="408" width="110" height="39"/>
+                                        <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Проверить"/>
+                                        <connections>
+                                            <action selector="checkingButtonPassed" destination="YHs-Nm-3PS" eventType="touchUpInside" id="Zd9-nf-cfC"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какое количество спутников у планеты \(planetList.name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QR0-p3-ael">
+                                        <rect key="frame" x="16" y="237" width="301" height="53"/>
+                                        <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="QR0-p3-ael" firstAttribute="leading" secondItem="Jwu-Sd-icM" secondAttribute="leading" constant="16" id="D2K-mZ-J51"/>
+                                    <constraint firstItem="QR0-p3-ael" firstAttribute="centerX" secondItem="Jwu-Sd-icM" secondAttribute="centerX" id="Tbl-Zx-nXC"/>
+                                    <constraint firstAttribute="bottom" secondItem="E9l-cY-lG8" secondAttribute="bottom" constant="80" id="VKF-EG-WV4"/>
+                                    <constraint firstItem="E9l-cY-lG8" firstAttribute="centerX" secondItem="Jwu-Sd-icM" secondAttribute="centerX" id="VjR-tO-eJ1"/>
+                                    <constraint firstItem="QR0-p3-ael" firstAttribute="centerY" secondItem="Jwu-Sd-icM" secondAttribute="centerY" id="fsA-fn-bvJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="QR0-p3-ael" secondAttribute="trailing" constant="16" id="qwU-iC-YtH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c1k-o5-2gg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jwu-Sd-icM" firstAttribute="centerY" secondItem="CCD-Hc-PA3" secondAttribute="centerY" id="NFq-DC-YLV"/>
+                            <constraint firstItem="Jwu-Sd-icM" firstAttribute="top" secondItem="c1k-o5-2gg" secondAttribute="top" constant="60" id="Qnd-c3-ijJ"/>
+                            <constraint firstItem="Jwu-Sd-icM" firstAttribute="width" secondItem="CCD-Hc-PA3" secondAttribute="height" multiplier="343:667" id="bIs-jo-tGk"/>
+                            <constraint firstItem="Jwu-Sd-icM" firstAttribute="centerX" secondItem="CCD-Hc-PA3" secondAttribute="centerX" id="emh-gr-be6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TOq-zb-6bJ"/>
+                    <connections>
+                        <outlet property="contentView" destination="Jwu-Sd-icM" id="IPU-cS-HCk"/>
+                        <outlet property="questionLabel" destination="QR0-p3-ael" id="1PU-p1-Feb"/>
+                        <outlet property="resultLabel" destination="QR0-p3-ael" id="Gn8-Wr-dCj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U15-vl-fGT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2663" y="199"/>
         </scene>
     </scenes>
     <resources>
