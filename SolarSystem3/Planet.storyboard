@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,39 +11,220 @@
         <!--Solar System-->
         <scene sceneID="CVT-zg-Q5c">
             <objects>
-                <viewController id="ENn-aL-xy4" sceneMemberID="viewController">
+                <viewController id="ENn-aL-xy4" customClass="SolarSystemViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CTV-eM-L83">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nightSky" translatesAutoresizingMaskIntoConstraints="NO" id="YFi-5K-spO">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SUP-wP-NcP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Solar System" id="WLp-hq-L9n"/>
+                    <tabBarItem key="tabBarItem" title="Solar System" image="sun.min" catalog="system" id="WLp-hq-L9n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJa-hf-eki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="196" y="102"/>
+            <point key="canvasLocation" x="194.85981308411215" y="101.72786177105833"/>
         </scene>
         <!--Planets-->
         <scene sceneID="8Xc-Rh-Bk2">
             <objects>
-                <viewController id="MQl-ka-Pao" sceneMemberID="viewController">
+                <viewController id="MQl-ka-Pao" customClass="PlanetsViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IcV-xH-ZTc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nightSky" translatesAutoresizingMaskIntoConstraints="NO" id="Fi2-BX-FP5">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="r70-fY-3a3">
+                                <rect key="frame" x="166.66666666666666" y="86" width="94.999999999999972" height="727"/>
+                                <subviews>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcF-rj-m8x">
+                                        <rect key="frame" x="12.333333333333343" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="LRW-Pq-pW8"/>
+                                            <constraint firstAttribute="width" secondItem="wcF-rj-m8x" secondAttribute="height" multiplier="1:1" id="b2h-RN-UCj"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="нептун"/>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxH-NF-vn9">
+                                        <rect key="frame" x="12.333333333333343" y="90" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="SUY-Ih-cMR"/>
+                                            <constraint firstAttribute="width" secondItem="GxH-NF-vn9" secondAttribute="height" multiplier="1:1" id="Ul4-6Y-lAy"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="уран"/>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoN-Ji-DHD">
+                                        <rect key="frame" x="0.0" y="180" width="95" height="95"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="DoN-Ji-DHD" secondAttribute="height" multiplier="1:1" id="30E-rr-zR4"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="95" id="vNR-Wy-K9v"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="сатурн"/>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ah-6G-3pT">
+                                        <rect key="frame" x="1.3333333333333428" y="295" width="92" height="92"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="92" id="7bO-Uh-k0c"/>
+                                            <constraint firstAttribute="width" secondItem="5Ah-6G-3pT" secondAttribute="height" multiplier="1:1" id="sUN-hC-O7l"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="юпитер"/>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igN-fx-tN2">
+                                        <rect key="frame" x="17.333333333333343" y="407" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="9K5-1V-pso"/>
+                                            <constraint firstAttribute="width" secondItem="igN-fx-tN2" secondAttribute="height" multiplier="1:1" id="k4o-uC-Odi"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="марс"/>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejB-Ym-1B3">
+                                        <rect key="frame" x="12.333333333333343" y="487" width="70" height="70"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="Земля"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="Od1-cN-bh2"/>
+                                            <constraint firstAttribute="width" secondItem="ejB-Ym-1B3" secondAttribute="height" multiplier="1:1" id="iXx-62-nxh"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="земля"/>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rK-xH-P7m">
+                                        <rect key="frame" x="7.3333333333333428" y="577" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="4rK-xH-P7m" secondAttribute="height" multiplier="1:1" id="UCD-LI-Pz5"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="aip-On-mXy"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="венера"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe7-IL-Oro">
+                                        <rect key="frame" x="22.333333333333343" y="677" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="1Nh-Zc-bev"/>
+                                            <constraint firstAttribute="width" secondItem="fe7-IL-Oro" secondAttribute="height" multiplier="1:1" id="5AG-Cb-knF"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="меркурий"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dkx-ae-IuC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r70-fY-3a3" firstAttribute="centerX" secondItem="IcV-xH-ZTc" secondAttribute="centerX" id="9Qv-82-gbn"/>
+                            <constraint firstItem="r70-fY-3a3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dkx-ae-IuC" secondAttribute="top" constant="20" id="Qei-kH-RfN"/>
+                            <constraint firstItem="dkx-ae-IuC" firstAttribute="bottom" secondItem="r70-fY-3a3" secondAttribute="bottom" constant="30" id="THY-h7-Eo5"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Planets" id="fmT-Hf-Xq6"/>
+                    <tabBarItem key="tabBarItem" title="Planets" image="rotate.3d" catalog="system" id="fmT-Hf-Xq6"/>
+                    <connections>
+                        <segue destination="Bhp-LC-oB7" kind="presentation" modalPresentationStyle="fullScreen" id="FXQ-LI-MAj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9n-bX-WLV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="196" y="-504"/>
+            <point key="canvasLocation" x="195.6521739130435" y="-504.24107142857139"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--About Planet View Controller-->
+        <scene sceneID="g1O-va-5Ww">
+            <objects>
+                <viewController id="Bhp-LC-oB7" customClass="AboutPlanetViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="twX-uK-f1E">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nightSky" translatesAutoresizingMaskIntoConstraints="NO" id="Gll-9O-jUd">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lzA-7M-60i">
+                                <rect key="frame" x="114" y="248" width="200" height="430"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="земля" translatesAutoresizingMaskIntoConstraints="NO" id="JYb-CI-gSo">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="2fu-GQ-2TK"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="iVd-ib-96x"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iy7-sV-UMb">
+                                        <rect key="frame" x="25.333333333333343" y="230" width="149.66666666666666" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBD-jT-BEb">
+                                                <rect key="frame" x="33.666666666666657" y="0.0" width="82" height="32"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="32"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGu-0Q-USM">
+                                                <rect key="frame" x="49.333333333333314" y="42" width="51" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNh-FC-MgP">
+                                                <rect key="frame" x="42.333333333333321" y="84" width="64.666666666666686" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance to Sun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXA-X7-Soj">
+                                                <rect key="frame" x="0.0" y="126" width="149.66666666666666" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnic count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZT-0H-25P">
+                                                <rect key="frame" x="8.6666666666666572" y="168" width="132" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9i-fx-FsC">
+                                <rect key="frame" x="183" y="800" width="62" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeButton:" destination="Bhp-LC-oB7" eventType="touchUpInside" id="BZO-Gx-3zi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iRM-5Z-sDw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lzA-7M-60i" firstAttribute="centerY" secondItem="twX-uK-f1E" secondAttribute="centerY" id="BFL-MJ-LHR"/>
+                            <constraint firstItem="A9i-fx-FsC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lzA-7M-60i" secondAttribute="bottom" constant="30" id="JEO-vu-qei"/>
+                            <constraint firstItem="lzA-7M-60i" firstAttribute="centerX" secondItem="twX-uK-f1E" secondAttribute="centerX" id="Osd-Df-WCA"/>
+                            <constraint firstItem="A9i-fx-FsC" firstAttribute="centerX" secondItem="twX-uK-f1E" secondAttribute="centerX" id="d7F-W9-bRX"/>
+                            <constraint firstItem="iRM-5Z-sDw" firstAttribute="bottom" secondItem="A9i-fx-FsC" secondAttribute="bottom" constant="50" id="iXE-9V-Tgc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="distanceToSunLabel" destination="AXA-X7-Soj" id="DL9-8e-iFF"/>
+                        <outlet property="numberOfSatellitesLabel" destination="KZT-0H-25P" id="QWg-Ev-DIq"/>
+                        <outlet property="planetImageView" destination="JYb-CI-gSo" id="7XO-xE-LVa"/>
+                        <outlet property="planetMassLabel" destination="GGu-0Q-USM" id="jZh-Gk-JOa"/>
+                        <outlet property="planetNameLabel" destination="LBD-jT-BEb" id="dSW-yf-w6O"/>
+                        <outlet property="planetRadiusLabel" destination="FNh-FC-MgP" id="04r-pN-nrW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNL-6V-5fg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909.81308411214945" y="-505.39956803455726"/>
+        </scene>
+        <!--Solar System Tab Bar Controller-->
         <scene sceneID="ZTs-2u-8SN">
             <objects>
-                <tabBarController id="qsr-2b-7K0" sceneMemberID="viewController">
+                <tabBarController id="qsr-2b-7K0" customClass="SolarSystemTabBarController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rxm-rN-XiF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -60,6 +241,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="nightSky" width="1152" height="2048"/>
+        <image name="rotate.3d" catalog="system" width="128" height="121"/>
+        <image name="sun.min" catalog="system" width="128" height="121"/>
+        <image name="венера" width="382" height="382"/>
+        <image name="земля" width="430" height="428"/>
+        <image name="марс" width="365" height="367"/>
+        <image name="меркурий" width="128" height="128"/>
+        <image name="нептун" width="420" height="420"/>
+        <image name="сатурн" width="797" height="797"/>
+        <image name="уран" width="478" height="480"/>
+        <image name="юпитер" width="797" height="797"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
