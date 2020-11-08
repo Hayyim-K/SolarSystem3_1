@@ -8,9 +8,9 @@
 struct Planet {
     
     let name: String
-    let mass: Double
-    let radius: Double
-    let distanceToSun: Double
+    let mass: Float
+    let radius: Float
+    let distanceToSun: Float
     let numberOfSatellite: Int
     
     static func getPlanets() -> [Planet] {
