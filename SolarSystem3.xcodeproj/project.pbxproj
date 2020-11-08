@@ -13,6 +13,8 @@
 		6FB9B6822557EF2000578B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9B6802557EF2000578B87 /* Main.storyboard */; };
 		6FB9B6842557EF2300578B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9B6832557EF2300578B87 /* Assets.xcassets */; };
 		6FB9B6872557EF2300578B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9B6852557EF2300578B87 /* LaunchScreen.storyboard */; };
+		6FB9B6912557EF5400578B87 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9B6902557EF5400578B87 /* DataManager.swift */; };
+		6FB9B6942557EF6600578B87 /* PlanetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9B6932557EF6600578B87 /* PlanetModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6FB9B6832557EF2300578B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FB9B6862557EF2300578B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FB9B6882557EF2300578B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FB9B6902557EF5400578B87 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6FB9B6932557EF6600578B87 /* PlanetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +60,15 @@
 		6FB9B6792557EF2000578B87 /* SolarSystem3 */ = {
 			isa = PBXGroup;
 			children = (
-				6FB9B67A2557EF2000578B87 /* AppDelegate.swift */,
-				6FB9B67C2557EF2000578B87 /* SceneDelegate.swift */,
+				6FB9B6932557EF6600578B87 /* PlanetModel.swift */,
+				6FB9B6902557EF5400578B87 /* DataManager.swift */,
 				6FB9B67E2557EF2000578B87 /* ViewController.swift */,
 				6FB9B6802557EF2000578B87 /* Main.storyboard */,
 				6FB9B6832557EF2300578B87 /* Assets.xcassets */,
 				6FB9B6852557EF2300578B87 /* LaunchScreen.storyboard */,
 				6FB9B6882557EF2300578B87 /* Info.plist */,
+				6FB9B67A2557EF2000578B87 /* AppDelegate.swift */,
+				6FB9B67C2557EF2000578B87 /* SceneDelegate.swift */,
 			);
 			path = SolarSystem3;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FB9B67F2557EF2000578B87 /* ViewController.swift in Sources */,
+				6FB9B6912557EF5400578B87 /* DataManager.swift in Sources */,
 				6FB9B67B2557EF2000578B87 /* AppDelegate.swift in Sources */,
 				6FB9B67D2557EF2000578B87 /* SceneDelegate.swift in Sources */,
+				6FB9B6942557EF6600578B87 /* PlanetModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
