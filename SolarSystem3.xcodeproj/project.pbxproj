@@ -18,6 +18,13 @@
 		8654ADAA2557F61F00747295 /* Planet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8654ADA92557F61F00747295 /* Planet.storyboard */; };
 		91338B912557F16F009F9745 /* StoryboardArtur.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91338B902557F16F009F9745 /* StoryboardArtur.storyboard */; };
 		91338B962557F1B1009F9745 /* TableViewContorllerArtur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91338B952557F1B1009F9745 /* TableViewContorllerArtur.swift */; };
+		AB81F4AD2558009A005AB2F4 /* StoryboardDanya.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB81F4AC2558009A005AB2F4 /* StoryboardDanya.storyboard */; };
+		AB81F4C525582877005AB2F4 /* PopUpRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81F4C225582877005AB2F4 /* PopUpRegistrationViewController.swift */; };
+		AB81F4C625582877005AB2F4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81F4C125582877005AB2F4 /* MenuViewController.swift */; };
+		AB81F4C725582877005AB2F4 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81F4C025582877005AB2F4 /* AuthorizationViewController.swift */; };
+		AB81F4C825582877005AB2F4 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81F4C325582877005AB2F4 /* RegistrationViewController.swift */; };
+		AB81F4C925582877005AB2F4 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81F4BF25582876005AB2F4 /* UserData.swift */; };
+		AB81F4CA25582877005AB2F4 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81F4C425582877005AB2F4 /* UserDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +41,13 @@
 		8654ADA92557F61F00747295 /* Planet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Planet.storyboard; sourceTree = "<group>"; };
 		91338B902557F16F009F9745 /* StoryboardArtur.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardArtur.storyboard; sourceTree = "<group>"; };
 		91338B952557F1B1009F9745 /* TableViewContorllerArtur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewContorllerArtur.swift; sourceTree = "<group>"; };
+		AB81F4AC2558009A005AB2F4 /* StoryboardDanya.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardDanya.storyboard; sourceTree = "<group>"; };
+		AB81F4BF25582876005AB2F4 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserData.swift; path = /Users/rlt202/Documents/SolarSystem3/Artur/UserData.swift; sourceTree = "<absolute>"; };
+		AB81F4C025582877005AB2F4 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthorizationViewController.swift; path = /Users/rlt202/Documents/SolarSystem3/Artur/AuthorizationViewController.swift; sourceTree = "<absolute>"; };
+		AB81F4C125582877005AB2F4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = /Users/rlt202/Documents/SolarSystem3/Artur/MenuViewController.swift; sourceTree = "<absolute>"; };
+		AB81F4C225582877005AB2F4 /* PopUpRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopUpRegistrationViewController.swift; path = /Users/rlt202/Documents/SolarSystem3/Artur/PopUpRegistrationViewController.swift; sourceTree = "<absolute>"; };
+		AB81F4C325582877005AB2F4 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistrationViewController.swift; path = /Users/rlt202/Documents/SolarSystem3/Artur/RegistrationViewController.swift; sourceTree = "<absolute>"; };
+		AB81F4C425582877005AB2F4 /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDataManager.swift; path = /Users/rlt202/Documents/SolarSystem3/Artur/UserDataManager.swift; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				6FB9B6932557EF6600578B87 /* PlanetModel.swift */,
+				AB81F4C025582877005AB2F4 /* AuthorizationViewController.swift */,
+				AB81F4C125582877005AB2F4 /* MenuViewController.swift */,
+				AB81F4C225582877005AB2F4 /* PopUpRegistrationViewController.swift */,
+				AB81F4C325582877005AB2F4 /* RegistrationViewController.swift */,
+				AB81F4BF25582876005AB2F4 /* UserData.swift */,
+				AB81F4C425582877005AB2F4 /* UserDataManager.swift */,
+				AB81F4AC2558009A005AB2F4 /* StoryboardDanya.storyboard */,
 				6FB9B6902557EF5400578B87 /* DataManager.swift */,
 				6FB9B67E2557EF2000578B87 /* ViewController.swift */,
 				8654ADA92557F61F00747295 /* Planet.storyboard */,
@@ -148,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8654ADAA2557F61F00747295 /* Planet.storyboard in Resources */,
+				AB81F4AD2558009A005AB2F4 /* StoryboardDanya.storyboard in Resources */,
 				91338B912557F16F009F9745 /* StoryboardArtur.storyboard in Resources */,
 				6FB9B6872557EF2300578B87 /* LaunchScreen.storyboard in Resources */,
 				6FB9B6842557EF2300578B87 /* Assets.xcassets in Resources */,
@@ -162,12 +184,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB81F4C725582877005AB2F4 /* AuthorizationViewController.swift in Sources */,
 				91338B962557F1B1009F9745 /* TableViewContorllerArtur.swift in Sources */,
 				6FB9B67F2557EF2000578B87 /* ViewController.swift in Sources */,
 				6FB9B6912557EF5400578B87 /* DataManager.swift in Sources */,
+				AB81F4C825582877005AB2F4 /* RegistrationViewController.swift in Sources */,
+				AB81F4C925582877005AB2F4 /* UserData.swift in Sources */,
+				AB81F4C525582877005AB2F4 /* PopUpRegistrationViewController.swift in Sources */,
 				6FB9B67B2557EF2000578B87 /* AppDelegate.swift in Sources */,
+				AB81F4CA25582877005AB2F4 /* UserDataManager.swift in Sources */,
 				6FB9B67D2557EF2000578B87 /* SceneDelegate.swift in Sources */,
 				6FB9B6942557EF6600578B87 /* PlanetModel.swift in Sources */,
+				AB81F4C625582877005AB2F4 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
