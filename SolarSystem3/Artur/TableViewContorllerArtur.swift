@@ -27,17 +27,36 @@ class TableViewControllerArtur: UITableViewController {
         let namesFromPlanetList = planetList.map {$0.name}
         let namesFromNewPlanetList = planetListShuffle.map {$0.name}
         
-        var alert = 0
+        var count = 0
+        var numOfPoints = 0
         
-        if namesFromPlanetList == namesFromNewPlanetList {
-            showAlertView(title: "Дальше", message: "Вы молодец! Планеты в правильном порядке")
+        if namesFromPlanetList == namesFromNewPlanetList  {
+            switch count {
+            case 0: numOfPoints = 5
+            case 1...2: numOfPoints = 4
+            case 3...5: numOfPoints = 3
+            case 6...8: numOfPoints = 2
+            case 9...10: numOfPoints = 1
+            default: numOfPoints = 0
+                showAlertView(title: "Ok", message: "Количество балов \(numOfPoints)")
+                
+            }
+        } else  {
+            count += 1
+            showAlertView(title: "Ok", message: "Количество балов \(numOfPoints)")
             
-        } else {
-            alert += 1
-            showAlertView(title: "Ок", message: "Попытка номер\(alert).")
         }
     }
     
+//        if namesFromPlanetList == namesFromNewPlanetList {
+//            showAlertView(title: "Дальше", message: "Вы молодец! Планеты в правильном порядке")
+//
+//        } else {
+//            alert += 1
+//            showAlertView(title: "Ок", message: "Попытка номер\(alert).")
+//        }
+
+    }
     private func showAlertView(title: String, message: String, textField: UITextField? = nil) {
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Закрыть", style: .default) { _ in
