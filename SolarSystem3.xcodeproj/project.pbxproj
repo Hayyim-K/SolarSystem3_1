@@ -15,6 +15,8 @@
 		6FB9B6872557EF2300578B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9B6852557EF2300578B87 /* LaunchScreen.storyboard */; };
 		6FB9B6912557EF5400578B87 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9B6902557EF5400578B87 /* DataManager.swift */; };
 		6FB9B6942557EF6600578B87 /* PlanetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9B6932557EF6600578B87 /* PlanetModel.swift */; };
+		91338B912557F16F009F9745 /* StoryboardArtur.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91338B902557F16F009F9745 /* StoryboardArtur.storyboard */; };
+		91338B962557F1B1009F9745 /* TableViewContorllerArtur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91338B952557F1B1009F9745 /* TableViewContorllerArtur.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		6FB9B6882557EF2300578B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FB9B6902557EF5400578B87 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		6FB9B6932557EF6600578B87 /* PlanetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetModel.swift; sourceTree = "<group>"; };
+		91338B902557F16F009F9745 /* StoryboardArtur.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardArtur.storyboard; sourceTree = "<group>"; };
+		91338B952557F1B1009F9745 /* TableViewContorllerArtur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewContorllerArtur.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 		6FB9B66E2557EF2000578B87 = {
 			isa = PBXGroup;
 			children = (
+				91338B932557F173009F9745 /* Artur */,
 				6FB9B6792557EF2000578B87 /* SolarSystem3 */,
 				6FB9B6782557EF2000578B87 /* Products */,
 			);
@@ -71,6 +76,15 @@
 				6FB9B67C2557EF2000578B87 /* SceneDelegate.swift */,
 			);
 			path = SolarSystem3;
+			sourceTree = "<group>";
+		};
+		91338B932557F173009F9745 /* Artur */ = {
+			isa = PBXGroup;
+			children = (
+				91338B902557F16F009F9745 /* StoryboardArtur.storyboard */,
+				91338B952557F1B1009F9745 /* TableViewContorllerArtur.swift */,
+			);
+			path = Artur;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91338B912557F16F009F9745 /* StoryboardArtur.storyboard in Resources */,
 				6FB9B6872557EF2300578B87 /* LaunchScreen.storyboard in Resources */,
 				6FB9B6842557EF2300578B87 /* Assets.xcassets in Resources */,
 				6FB9B6822557EF2000578B87 /* Main.storyboard in Resources */,
@@ -143,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91338B962557F1B1009F9745 /* TableViewContorllerArtur.swift in Sources */,
 				6FB9B67F2557EF2000578B87 /* ViewController.swift in Sources */,
 				6FB9B6912557EF5400578B87 /* DataManager.swift in Sources */,
 				6FB9B67B2557EF2000578B87 /* AppDelegate.swift in Sources */,
