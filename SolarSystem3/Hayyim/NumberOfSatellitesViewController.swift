@@ -8,7 +8,7 @@
 import UIKit
 
 class NumberOfSatellitesViewController: UIViewController {
-
+    
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var sliderValueLabel: UILabel!
     
@@ -29,13 +29,13 @@ class NumberOfSatellitesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setSlider()
         setElements()
         
         resultLabel.isHidden = true
         nextButton.isHidden = true
-      
+        
     }
     
     private func setElements() {
@@ -145,9 +145,9 @@ class NumberOfSatellitesViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let resultVC = segue.destination as! ResultsViewController
-//        resultVC.numberOfPointsFromNumOfSatellitesVC  = numberOfPointsFromNumOfSatellitesVC
+        //        resultVC.numberOfPointsFromNumOfSatellitesVC  = numberOfPointsFromNumOfSatellitesVC
     }
     
-
+    
 }
 

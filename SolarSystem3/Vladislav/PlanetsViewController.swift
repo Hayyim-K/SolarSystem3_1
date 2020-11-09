@@ -19,7 +19,7 @@ class PlanetsViewController: UIViewController {
         super.viewDidLoad()
         
         setLabeles()
-
+        
     }
     
     private func setLabeles() {

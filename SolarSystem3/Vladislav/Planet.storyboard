@@ -373,7 +373,7 @@
         <!--Solar System Tab Bar Controller-->
         <scene sceneID="ZTs-2u-8SN">
             <objects>
-                <tabBarController id="qsr-2b-7K0" customClass="SolarSystemTabBarController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="vladislav" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qsr-2b-7K0" customClass="SolarSystemTabBarController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rxm-rN-XiF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

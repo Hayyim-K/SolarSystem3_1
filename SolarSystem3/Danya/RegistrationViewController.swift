@@ -17,7 +17,7 @@ class RegistrationViewController: UIViewController {
         showButton.layer.cornerRadius = 10
         
     }
-
+    
     @IBAction func showPopUp(_ sender: UIButton) {
         let popUpVC = UIStoryboard(name: "StoryboardDanya", bundle: nil).instantiateViewController(withIdentifier: "popUp") as! PopUpRegistrationViewController // 1
         

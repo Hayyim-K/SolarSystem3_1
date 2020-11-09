@@ -89,7 +89,7 @@ class MassViewController: UIViewController {
     }
     
     @IBAction func nextButtonPressed() {
-//        numberOfPointsFromNumOfSatellitesVC += numberOfPointsFromArturVC
+        //        numberOfPointsFromNumOfSatellitesVC += numberOfPointsFromArturVC
         performSegue(withIdentifier: "radiusVC", sender: nil)
     }
     

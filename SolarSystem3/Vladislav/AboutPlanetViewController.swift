@@ -8,10 +8,10 @@
 import UIKit
 
 class AboutPlanetViewController: UIViewController {
-
+    
     //MARK: IB Outlets
     @IBOutlet weak var planetImageView: UIImageView!
-
+    
     @IBOutlet weak var planetNameLabel: UILabel!
     @IBOutlet weak var planetMassLabel: UILabel!
     @IBOutlet weak var planetRadiusLabel: UILabel!

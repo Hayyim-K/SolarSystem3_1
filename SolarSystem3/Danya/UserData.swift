@@ -17,5 +17,5 @@ struct User {
         
         return User(username: user, password: password)
         
-        }
+    }
 }

@@ -8,7 +8,7 @@
 import UIKit
 
 class RadiusViewController: UIViewController {
-
+    
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var sliderValueLabel: UILabel!
     @IBOutlet weak var planetImageView: UIImageView!
@@ -28,13 +28,13 @@ class RadiusViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setSlider()
         setElements()
         
         resultLabel.isHidden = true
         nextButton.isHidden = true
-      
+        
     }
     
     private func setElements() {
@@ -101,5 +101,5 @@ class RadiusViewController: UIViewController {
         resultVC.numberOfPointsFromRadiusVC = numberOfPointsFromRadiusVC
     }
     
-
+    
 }

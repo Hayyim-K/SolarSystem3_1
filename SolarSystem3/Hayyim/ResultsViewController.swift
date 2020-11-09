@@ -8,7 +8,7 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
-
+    
     @IBOutlet weak var resultLabel: UILabel!
     
     var numberOfPointsFromNumOfSatellitesVC: Int!

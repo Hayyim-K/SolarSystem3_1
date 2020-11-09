@@ -25,5 +25,5 @@ class MenuViewController: UIViewController {
         exitButton.layer.cornerRadius = 10
         
     }
-
+    
 }

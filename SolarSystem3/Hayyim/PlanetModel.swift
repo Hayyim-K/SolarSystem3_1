@@ -21,7 +21,7 @@ struct Planet {
         let radius = data.radius
         let distanceToSun = data.distanceToSun
         let numberOfSatellite = data.numberOfSatellite
-      
+        
         var planets = [Planet]()
         for index in 0..<names.count {
             planets.append(Planet(name: names[index],

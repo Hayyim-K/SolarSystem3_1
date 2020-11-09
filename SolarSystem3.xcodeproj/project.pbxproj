@@ -21,7 +21,7 @@
 		6FB9B67B2557EF2000578B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9B67A2557EF2000578B87 /* AppDelegate.swift */; };
 		6FB9B67D2557EF2000578B87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9B67C2557EF2000578B87 /* SceneDelegate.swift */; };
 		6FB9B67F2557EF2000578B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9B67E2557EF2000578B87 /* ViewController.swift */; };
-		6FB9B6822557EF2000578B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9B6802557EF2000578B87 /* Main.storyboard */; };
+		6FB9B6822557EF2000578B87 /* other.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9B6802557EF2000578B87 /* other.storyboard */; };
 		6FB9B6842557EF2300578B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9B6832557EF2300578B87 /* Assets.xcassets */; };
 		6FB9B6872557EF2300578B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9B6852557EF2300578B87 /* LaunchScreen.storyboard */; };
 		6FB9B6912557EF5400578B87 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9B6902557EF5400578B87 /* DataManager.swift */; };
@@ -33,7 +33,7 @@
 		8654ADB825580D3600747295 /* PlanetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654ADB725580D3600747295 /* PlanetsViewController.swift */; };
 		91338B912557F16F009F9745 /* StoryboardArtur.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91338B902557F16F009F9745 /* StoryboardArtur.storyboard */; };
 		91338B962557F1B1009F9745 /* TableViewContorllerArtur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91338B952557F1B1009F9745 /* TableViewContorllerArtur.swift */; };
-		AB81F4AD2558009A005AB2F4 /* StoryboardDanya.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB81F4AC2558009A005AB2F4 /* StoryboardDanya.storyboard */; };
+		AB81F4AD2558009A005AB2F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB81F4AC2558009A005AB2F4 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +52,7 @@
 		6FB9B67A2557EF2000578B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FB9B67C2557EF2000578B87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6FB9B67E2557EF2000578B87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6FB9B6812557EF2000578B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6FB9B6812557EF2000578B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/other.storyboard; sourceTree = "<group>"; };
 		6FB9B6832557EF2300578B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FB9B6862557EF2300578B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FB9B6882557EF2300578B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		8654ADB725580D3600747295 /* PlanetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewController.swift; sourceTree = "<group>"; };
 		91338B902557F16F009F9745 /* StoryboardArtur.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardArtur.storyboard; sourceTree = "<group>"; };
 		91338B952557F1B1009F9745 /* TableViewContorllerArtur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewContorllerArtur.swift; sourceTree = "<group>"; };
-		AB81F4AC2558009A005AB2F4 /* StoryboardDanya.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardDanya.storyboard; sourceTree = "<group>"; };
+		AB81F4AC2558009A005AB2F4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 				6F4E280325583B240068CDDC /* MenuViewController.swift */,
 				6F4E27F3255836BA0068CDDC /* UserData.swift */,
 				6F4E27F6255836BA0068CDDC /* UserDataManager.swift */,
-				AB81F4AC2558009A005AB2F4 /* StoryboardDanya.storyboard */,
+				AB81F4AC2558009A005AB2F4 /* Main.storyboard */,
 			);
 			path = Danya;
 			sourceTree = "<group>";
@@ -142,7 +142,7 @@
 				6F4E280025583A7F0068CDDC /* Danya */,
 				6F4E27FF25583A510068CDDC /* Hayyim */,
 				6F4E280125583AA20068CDDC /* Vladislav */,
-				6FB9B6802557EF2000578B87 /* Main.storyboard */,
+				6FB9B6802557EF2000578B87 /* other.storyboard */,
 				6FB9B67E2557EF2000578B87 /* ViewController.swift */,
 				6FB9B6832557EF2300578B87 /* Assets.xcassets */,
 				6FB9B6852557EF2300578B87 /* LaunchScreen.storyboard */,
@@ -220,12 +220,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8654ADAA2557F61F00747295 /* Planet.storyboard in Resources */,
-				AB81F4AD2558009A005AB2F4 /* StoryboardDanya.storyboard in Resources */,
+				AB81F4AD2558009A005AB2F4 /* Main.storyboard in Resources */,
 				6F4E2807255843050068CDDC /* hayyim.storyboard in Resources */,
 				91338B912557F16F009F9745 /* StoryboardArtur.storyboard in Resources */,
 				6FB9B6872557EF2300578B87 /* LaunchScreen.storyboard in Resources */,
 				6FB9B6842557EF2300578B87 /* Assets.xcassets in Resources */,
-				6FB9B6822557EF2000578B87 /* Main.storyboard in Resources */,
+				6FB9B6822557EF2000578B87 /* other.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,12 +262,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6FB9B6802557EF2000578B87 /* Main.storyboard */ = {
+		6FB9B6802557EF2000578B87 /* other.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6FB9B6812557EF2000578B87 /* Base */,
 			);
-			name = Main.storyboard;
+			name = other.storyboard;
 			sourceTree = "<group>";
 		};
 		6FB9B6852557EF2300578B87 /* LaunchScreen.storyboard */ = {

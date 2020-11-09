@@ -280,6 +280,9 @@
                                         <state key="normal" title="Почитать о солнечной системе">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="K4j-FF-FqM" kind="show" id="E9l-b8-IBd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXI-j8-NYl">
                                         <rect key="frame" x="93.5" y="141.5" width="156" height="30"/>
@@ -287,6 +290,9 @@
                                         <state key="normal" title="Сыграть в мини-игры">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="OlB-38-D2E" kind="show" id="T9a-Qx-BR0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -345,6 +351,26 @@
                 <exit id="RHs-i6-83J" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1383.2" y="40.029985007496258"/>
+        </scene>
+        <!--vladislav-->
+        <scene sceneID="Fvq-d3-8I9">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="vladislav" storyboardName="Planet" referencedIdentifier="vladislav" id="K4j-FF-FqM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="18e-Z5-l4Q"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zit-hv-aD5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2001" y="-147"/>
+        </scene>
+        <!--artur-->
+        <scene sceneID="Mnn-Qg-w2z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StoryboardArtur" referencedIdentifier="artur" id="OlB-38-D2E" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Y42-iN-Zx6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RX0-Qv-wZP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2001" y="124"/>
         </scene>
     </scenes>
     <resources>
