@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Solar System-->
+        <!--Info-->
         <scene sceneID="CVT-zg-Q5c">
             <objects>
                 <viewController id="ENn-aL-xy4" customClass="SolarSystemViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,15 +20,53 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SMP-Sc-RxE">
+                                <rect key="frame" x="25" y="78.999999999999972" width="378" height="470.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9E-ox-h4L">
+                                        <rect key="frame" x="0.0" y="0.0" width="378" height="150.66666666666666"/>
+                                        <string key="text">Солнечная система — планетная система, включает в себя центральную звезду — Солнце — и все естественные космические объекты, вращающиеся вокруг Солнца. Она сформировалась путём гравитационного сжатия газопылевого облака примерно 4,57 млрд лет назад.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtG-3i-KAP">
+                                        <rect key="frame" x="8.6666666666666572" y="170.66666666666666" width="361" height="107.66666666666666"/>
+                                        <string key="text">В солнечной системе находятся восемь классических планет и пять карликовых планет. В порядке увеличения расстояния от Солнца классические планеты расположены следующим образом:</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYS-Lk-w6Z">
+                                        <rect key="frame" x="135.33333333333334" y="298.33333333333331" width="107.66666666666666" height="172"/>
+                                        <string key="text">1. Меркурий.
+2. Венера.
+3. Земля.
+4. Марс
+5. Юпитер.
+6. Сатурн.
+7. Уран.
+8. Нептун. </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SUP-wP-NcP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SMP-Sc-RxE" firstAttribute="top" secondItem="SUP-wP-NcP" secondAttribute="top" constant="35" id="g6g-c1-xHJ"/>
+                            <constraint firstItem="SMP-Sc-RxE" firstAttribute="leading" secondItem="SUP-wP-NcP" secondAttribute="leading" constant="25" id="kAg-Zv-xfs"/>
+                            <constraint firstAttribute="trailing" secondItem="SMP-Sc-RxE" secondAttribute="trailing" constant="25" id="mR0-4y-tU9"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Solar System" image="sun.min" catalog="system" id="WLp-hq-L9n"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="info.circle" catalog="system" id="WLp-hq-L9n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJa-hf-eki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="194.85981308411215" y="101.72786177105833"/>
+            <point key="canvasLocation" x="195" y="172"/>
         </scene>
         <!--Planets-->
         <scene sceneID="8Xc-Rh-Bk2">
@@ -43,7 +81,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="r70-fY-3a3">
-                                <rect key="frame" x="166.66666666666666" y="86" width="94.999999999999972" height="727"/>
+                                <rect key="frame" x="166.66666666666666" y="76" width="94.999999999999972" height="727"/>
                                 <subviews>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcF-rj-m8x">
                                         <rect key="frame" x="12.333333333333343" y="0.0" width="70" height="70"/>
@@ -52,6 +90,9 @@
                                             <constraint firstAttribute="width" secondItem="wcF-rj-m8x" secondAttribute="height" multiplier="1:1" id="b2h-RN-UCj"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="нептун"/>
+                                        <connections>
+                                            <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="iRW-nw-Je9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxH-NF-vn9">
                                         <rect key="frame" x="12.333333333333343" y="90" width="70" height="70"/>
@@ -60,6 +101,9 @@
                                             <constraint firstAttribute="width" secondItem="GxH-NF-vn9" secondAttribute="height" multiplier="1:1" id="Ul4-6Y-lAy"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="уран"/>
+                                        <connections>
+                                            <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="UaD-8L-VYo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoN-Ji-DHD">
                                         <rect key="frame" x="0.0" y="180" width="95" height="95"/>
@@ -68,6 +112,9 @@
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="95" id="vNR-Wy-K9v"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="сатурн"/>
+                                        <connections>
+                                            <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="CkJ-Xr-jpY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ah-6G-3pT">
                                         <rect key="frame" x="1.3333333333333428" y="295" width="92" height="92"/>
@@ -76,6 +123,9 @@
                                             <constraint firstAttribute="width" secondItem="5Ah-6G-3pT" secondAttribute="height" multiplier="1:1" id="sUN-hC-O7l"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="юпитер"/>
+                                        <connections>
+                                            <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="lf7-LU-QES"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igN-fx-tN2">
                                         <rect key="frame" x="17.333333333333343" y="407" width="60" height="60"/>
@@ -84,6 +134,9 @@
                                             <constraint firstAttribute="width" secondItem="igN-fx-tN2" secondAttribute="height" multiplier="1:1" id="k4o-uC-Odi"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="марс"/>
+                                        <connections>
+                                            <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="Est-Ux-UnH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejB-Ym-1B3">
                                         <rect key="frame" x="12.333333333333343" y="487" width="70" height="70"/>
@@ -93,6 +146,9 @@
                                             <constraint firstAttribute="width" secondItem="ejB-Ym-1B3" secondAttribute="height" multiplier="1:1" id="iXx-62-nxh"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="земля"/>
+                                        <connections>
+                                            <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="6cB-RI-JT8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rK-xH-P7m">
                                         <rect key="frame" x="7.3333333333333428" y="577" width="80" height="80"/>
@@ -101,6 +157,9 @@
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="aip-On-mXy"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="венера"/>
+                                        <connections>
+                                            <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="gIx-Xf-lO3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe7-IL-Oro">
                                         <rect key="frame" x="22.333333333333343" y="677" width="50" height="50"/>
@@ -109,6 +168,9 @@
                                             <constraint firstAttribute="width" secondItem="fe7-IL-Oro" secondAttribute="height" multiplier="1:1" id="5AG-Cb-knF"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="меркурий"/>
+                                        <connections>
+                                            <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="Sas-6I-NR8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -118,12 +180,12 @@
                         <constraints>
                             <constraint firstItem="r70-fY-3a3" firstAttribute="centerX" secondItem="IcV-xH-ZTc" secondAttribute="centerX" id="9Qv-82-gbn"/>
                             <constraint firstItem="r70-fY-3a3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dkx-ae-IuC" secondAttribute="top" constant="20" id="Qei-kH-RfN"/>
-                            <constraint firstItem="dkx-ae-IuC" firstAttribute="bottom" secondItem="r70-fY-3a3" secondAttribute="bottom" constant="30" id="THY-h7-Eo5"/>
+                            <constraint firstItem="dkx-ae-IuC" firstAttribute="bottom" secondItem="r70-fY-3a3" secondAttribute="bottom" constant="40" id="THY-h7-Eo5"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Planets" image="rotate.3d" catalog="system" id="fmT-Hf-Xq6"/>
                     <connections>
-                        <segue destination="Bhp-LC-oB7" kind="presentation" modalPresentationStyle="fullScreen" id="FXQ-LI-MAj"/>
+                        <segue destination="Bhp-LC-oB7" kind="presentation" identifier="AboutPlanet" modalPresentationStyle="fullScreen" id="FXQ-LI-MAj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9n-bX-WLV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -241,17 +303,20 @@
         </scene>
     </scenes>
     <resources>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="nightSky" width="1152" height="2048"/>
         <image name="rotate.3d" catalog="system" width="128" height="121"/>
-        <image name="sun.min" catalog="system" width="128" height="121"/>
         <image name="венера" width="382" height="382"/>
         <image name="земля" width="430" height="428"/>
         <image name="марс" width="365" height="367"/>
-        <image name="меркурий" width="128" height="128"/>
+        <image name="меркурий" width="186" height="184"/>
         <image name="нептун" width="420" height="420"/>
         <image name="сатурн" width="797" height="797"/>
         <image name="уран" width="478" height="480"/>
         <image name="юпитер" width="797" height="797"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
