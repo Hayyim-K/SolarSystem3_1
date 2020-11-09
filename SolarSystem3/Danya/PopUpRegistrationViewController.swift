@@ -29,7 +29,6 @@ class PopUpRegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBAction func nextButtonPressed() {
         UserDataManager.dataManage.name = nameTextField.text!
         UserDataManager.dataManage.pass = passwordTextField.text!
-        
         moveOut()
     }
     
@@ -66,6 +65,7 @@ class PopUpRegistrationViewController: UIViewController, UITextFieldDelegate {
             self.view.frame.origin.y = 0
         }
     }
+
 }
 
 extension PopUpRegistrationViewController {

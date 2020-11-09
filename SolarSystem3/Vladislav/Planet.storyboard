@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qsr-2b-7K0">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -11,7 +11,7 @@
         <!--Info-->
         <scene sceneID="CVT-zg-Q5c">
             <objects>
-                <viewController id="ENn-aL-xy4" customClass="SolarSystemViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="ENn-aL-xy4" customClass="SolarSystemViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CTV-eM-L83">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,31 +56,51 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDe-bl-3bd">
+                                <rect key="frame" x="16" y="576.5" width="343" height="30"/>
+                                <state key="normal" title="Проверь себя"/>
+                                <connections>
+                                    <segue destination="1T3-kY-jvK" kind="show" id="Ld7-jN-3uS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SUP-wP-NcP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="SUP-wP-NcP" firstAttribute="trailing" secondItem="HDe-bl-3bd" secondAttribute="trailing" constant="16" id="A62-lb-VOn"/>
                             <constraint firstItem="SMP-Sc-RxE" firstAttribute="top" secondItem="SUP-wP-NcP" secondAttribute="top" constant="35" id="g6g-c1-xHJ"/>
+                            <constraint firstItem="HDe-bl-3bd" firstAttribute="top" secondItem="SMP-Sc-RxE" secondAttribute="bottom" constant="7" id="ivx-gy-eJo"/>
                             <constraint firstItem="SMP-Sc-RxE" firstAttribute="leading" secondItem="SUP-wP-NcP" secondAttribute="leading" constant="25" id="kAg-Zv-xfs"/>
                             <constraint firstAttribute="trailing" secondItem="SMP-Sc-RxE" secondAttribute="trailing" constant="25" id="mR0-4y-tU9"/>
+                            <constraint firstItem="HDe-bl-3bd" firstAttribute="leading" secondItem="SUP-wP-NcP" secondAttribute="leading" constant="16" id="sLt-iy-Od1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="info.circle" catalog="system" id="WLp-hq-L9n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJa-hf-eki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="195" y="172"/>
+            <point key="canvasLocation" x="-855.20000000000005" y="166.8665667166417"/>
         </scene>
-        <!--Planets-->
+        <!--artur-->
+        <scene sceneID="bIb-4y-ZAV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StoryboardArtur" referencedIdentifier="artur" id="1T3-kY-jvK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="adY-eX-gg1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1e-7i-MKP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-193" y="166"/>
+        </scene>
+        <!--Planets View Controller-->
         <scene sceneID="8Xc-Rh-Bk2">
             <objects>
-                <viewController id="MQl-ka-Pao" customClass="PlanetsViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="MQl-ka-Pao" customClass="PlanetsViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IcV-xH-ZTc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nightSky" translatesAutoresizingMaskIntoConstraints="NO" id="Fi2-BX-FP5">
-                                <rect key="frame" x="0.0" y="-690.5" width="375" height="2048"/>
+                                <rect key="frame" x="-388.5" y="-690.5" width="1152" height="2048"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJb-SX-nII">
                                 <rect key="frame" x="92" y="43.5" width="191" height="580"/>
@@ -257,12 +277,11 @@
                             <constraint firstItem="Fi2-BX-FP5" firstAttribute="centerX" secondItem="IcV-xH-ZTc" secondAttribute="centerX" id="6wQ-Km-fxG"/>
                             <constraint firstItem="dJb-SX-nII" firstAttribute="centerX" secondItem="IcV-xH-ZTc" secondAttribute="centerX" id="Bj5-NO-IDD"/>
                             <constraint firstItem="dJb-SX-nII" firstAttribute="width" secondItem="IcV-xH-ZTc" secondAttribute="height" multiplier="191:667" id="E0z-td-k4r"/>
-                            <constraint firstItem="Fi2-BX-FP5" firstAttribute="width" secondItem="IcV-xH-ZTc" secondAttribute="height" multiplier="375:667" id="PhX-Pf-KCY"/>
                             <constraint firstItem="Fi2-BX-FP5" firstAttribute="centerY" secondItem="IcV-xH-ZTc" secondAttribute="centerY" id="T81-4q-cHn"/>
                             <constraint firstItem="dJb-SX-nII" firstAttribute="centerY" secondItem="IcV-xH-ZTc" secondAttribute="centerY" id="aRu-WJ-eqt"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Planets" image="rotate.3d" catalog="system" id="fmT-Hf-Xq6"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="FDk-hI-MYl"/>
                     <connections>
                         <outletCollection property="planetNameLables" destination="oj5-mD-5sZ" collectionClass="NSMutableArray" id="qFt-Ya-QL5"/>
                         <outletCollection property="planetNameLables" destination="tdC-7D-OEW" collectionClass="NSMutableArray" id="J0w-aa-HhK"/>
@@ -277,12 +296,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9n-bX-WLV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="194.40000000000001" y="-505.09745127436287"/>
+            <point key="canvasLocation" x="636" y="-607"/>
         </scene>
         <!--About Planet View Controller-->
         <scene sceneID="g1O-va-5Ww">
             <objects>
-                <viewController id="Bhp-LC-oB7" customClass="AboutPlanetViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="Bhp-LC-oB7" customClass="AboutPlanetViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="twX-uK-f1E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -368,25 +387,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNL-6V-5fg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="909.81308411214945" y="-505.39956803455726"/>
+            <point key="canvasLocation" x="1441" y="-607"/>
         </scene>
         <!--Solar System Tab Bar Controller-->
         <scene sceneID="ZTs-2u-8SN">
             <objects>
-                <tabBarController storyboardIdentifier="vladislav" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qsr-2b-7K0" customClass="SolarSystemTabBarController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="vladislav" wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="dark" id="qsr-2b-7K0" customClass="SolarSystemTabBarController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rxm-rN-XiF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="MQl-ka-Pao" kind="relationship" relationship="viewControllers" id="7Y1-gn-bbG"/>
+                        <segue destination="0uR-9d-sYw" kind="relationship" relationship="viewControllers" id="7Y1-gn-bbG"/>
                         <segue destination="ENn-aL-xy4" kind="relationship" relationship="viewControllers" id="5w4-LZ-OBz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4p-pX-4bH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-694" y="-201"/>
+            <point key="canvasLocation" x="-855" y="-606"/>
+        </scene>
+        <!--Planets-->
+        <scene sceneID="Qdt-7K-2WN">
+            <objects>
+                <navigationController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" interfaceStyle="dark" id="0uR-9d-sYw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Planets" image="rotate.3d" catalog="system" id="fmT-Hf-Xq6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="ivJ-q5-yIb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MQl-ka-Pao" kind="relationship" relationship="rootViewController" id="son-e8-xJq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QVX-Hf-2oU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-110" y="-607"/>
         </scene>
     </scenes>
     <resources>

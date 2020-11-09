@@ -10,7 +10,7 @@ import UIKit
 class PlanetsViewController: UIViewController {
     
     //MARK: Public Properties
-    var planets: [Planet]!
+    var planets = Planet.getPlanets()
     var chosePlanet: Int = 0
     
     @IBOutlet var planetNameLables: [UILabel]!

@@ -66,7 +66,6 @@ class MassViewController: UIViewController {
     
     @IBAction func checkingButtonPassed() {
         let index = names.firstIndex(of: planetName)
-        
         let rightResult = planetsList[index ?? 3].mass
         
         let result = 1.0 - (abs(rightResult - slider.value) / slider.maximumValue)
