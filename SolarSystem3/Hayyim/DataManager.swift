@@ -20,18 +20,18 @@ class DataManager {
         "Нептун"
     ]
     
-    let mass: [Double] = [
+    let mass: [Float] = [
         0.055,
         0.815,
         1.0,
-        0,53,
+        0.53,
         11.2,
         9.4,
         4.0,
         3.9
     ]
     
-    let radius: [Double] = [
+    let radius: [Float] = [
         0.38,
         0.95,
         1,
@@ -42,7 +42,7 @@ class DataManager {
         17.2
     ]
     
-    let distanceToSun: [Double] = [
+    let distanceToSun: [Float] = [
         0.4,
         0.7,
         1,
