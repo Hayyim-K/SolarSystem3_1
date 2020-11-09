@@ -13,6 +13,23 @@ class PlanetsViewController: UIViewController {
     var planets: [Planet]!
     var chosePlanet: Int = 0
     
+    @IBOutlet var planetNameLables: [UILabel]!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setLabeles()
+
+    }
+    
+    private func setLabeles() {
+        let names = planets.map {$0.name}
+        for (label, name) in zip(planetNameLables, names) {
+            label.text = name
+        }
+        
+    }
+    
     //MARK: Override Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let planetsVC = segue.destination as! AboutPlanetViewController
