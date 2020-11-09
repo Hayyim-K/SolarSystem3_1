@@ -22,6 +22,7 @@ class TableViewControllerArtur: UITableViewController {
         
     }
     
+    
     @IBAction func checkButtonPress(_ sender: UIBarButtonItem) {
     
         let namesFromPlanetList = planetList.map {$0.name}
@@ -48,14 +49,6 @@ class TableViewControllerArtur: UITableViewController {
         }
     }
     
-//        if namesFromPlanetList == namesFromNewPlanetList {
-//            showAlertView(title: "Дальше", message: "Вы молодец! Планеты в правильном порядке")
-//
-//        } else {
-//            alert += 1
-//            showAlertView(title: "Ок", message: "Попытка номер\(alert).")
-//        }.
-
 
     private func showAlertView(title: String, message: String, textField: UITextField? = nil) {
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
