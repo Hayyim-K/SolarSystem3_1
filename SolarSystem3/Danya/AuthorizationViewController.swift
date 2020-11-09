@@ -14,11 +14,32 @@ class AuthorizationViewController: UIViewController, UITextFieldDelegate {
     
     private let userData = User.userData()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+                NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+                    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
          guard segue.identifier == "menu" else { return }
          guard let destination = segue.destination as? MenuViewController else { return }
         destination.name = userData.username
      }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if ((notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue) != nil {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= 50
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
     
     @IBAction func passButtonTapped() {
         showAlertView(title: "Забыл пароль?", message: "Твой пароль: \(userData.password)")

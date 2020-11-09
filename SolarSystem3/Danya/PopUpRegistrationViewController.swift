@@ -12,22 +12,25 @@ class PopUpRegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var messageView: UIView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var nextButton: UIView!
     
        override func viewDidLoad() {
            super.viewDidLoad()
            messageView.layer.cornerRadius = 24
+        nextButton.layer.cornerRadius = 10
            self.view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
            
            moveIn()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
       }
-       
-       @IBAction func closePopUp(_ sender: UIButton) {
-           moveOut()
-       }
        
     @IBAction func nextButtonPressed() {
         UserDataManager.dataManage.name = nameTextField.text!
         UserDataManager.dataManage.pass = passwordTextField.text!
+        
+        moveOut()
     }
     
     
@@ -49,6 +52,20 @@ class PopUpRegistrationViewController: UIViewController, UITextFieldDelegate {
                self.view.removeFromSuperview()
            }
        }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if ((notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue) != nil {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= 50
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
 }
 
 extension PopUpRegistrationViewController {
