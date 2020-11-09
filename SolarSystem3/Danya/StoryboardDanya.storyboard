@@ -11,7 +11,7 @@
         <!--Registration View Controller-->
         <scene sceneID="Tsd-8n-NwS">
             <objects>
-                <viewController id="e62-8Z-xdv" customClass="RegistrationViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="StoryboardDanya" storyboardIdentifier="StoryboardDanya" id="e62-8Z-xdv" customClass="RegistrationViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cso-1R-W5C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,35 +60,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o6Y-IL-QvL">
-                                <rect key="frame" x="62" y="208" width="250" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6Y-IL-QvL">
+                                <rect key="frame" x="62" y="208" width="251" height="251"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtW-om-JEH">
-                                        <rect key="frame" x="101" y="212" width="48" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtW-om-JEH">
+                                        <rect key="frame" x="101" y="213" width="49" height="30"/>
                                         <color key="backgroundColor" red="0.38503886009999999" green="0.38503886009999999" blue="0.38503886009999999" alpha="0.61762764079999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Готово">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="closePopUp:" destination="zZ1-hY-krI" eventType="touchUpInside" id="FB3-ek-U1R"/>
+                                            <action selector="closePopUp:" destination="zZ1-hY-krI" eventType="touchUpInside" id="77u-ur-Dei"/>
                                             <action selector="nextButtonPressed" destination="zZ1-hY-krI" eventType="touchUpInside" id="d0H-dy-EBA"/>
                                             <segue destination="Cxz-uu-bL4" kind="show" id="aCB-Qp-1tP"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qx-dG-0Ko">
-                                        <rect key="frame" x="74" y="8" width="102" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qx-dG-0Ko">
+                                        <rect key="frame" x="74" y="9.5" width="103" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="VYD-v4-NSq">
-                                        <rect key="frame" x="44" y="75" width="163.5" height="101"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="VYD-v4-NSq">
+                                        <rect key="frame" x="16" y="76" width="219" height="101"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cli-lz-WAi">
-                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="219" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -97,7 +94,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Придумайте пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zoI-lO-RZc">
-                                                <rect key="frame" x="0.0" y="67" width="163.5" height="34"/>
+                                                <rect key="frame" x="0.0" y="67" width="219" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -109,10 +106,27 @@
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vtW-om-JEH" secondAttribute="trailing" constant="101" id="0Zl-U6-aYL"/>
+                                    <constraint firstAttribute="trailing" secondItem="VYD-v4-NSq" secondAttribute="trailing" constant="16" id="6hS-am-G1H"/>
+                                    <constraint firstItem="vtW-om-JEH" firstAttribute="top" secondItem="VYD-v4-NSq" secondAttribute="bottom" constant="36" id="ATO-Yf-YrN"/>
+                                    <constraint firstAttribute="bottom" secondItem="vtW-om-JEH" secondAttribute="bottom" constant="8" id="JEo-Em-KeG"/>
+                                    <constraint firstAttribute="trailing" secondItem="0qx-dG-0Ko" secondAttribute="trailing" constant="74" id="Mgh-13-dXY"/>
+                                    <constraint firstItem="VYD-v4-NSq" firstAttribute="leading" secondItem="o6Y-IL-QvL" secondAttribute="leading" constant="16" id="Z6V-cI-gbW"/>
+                                    <constraint firstItem="VYD-v4-NSq" firstAttribute="top" secondItem="0qx-dG-0Ko" secondAttribute="bottom" constant="46" id="csS-UF-M9Y"/>
+                                    <constraint firstItem="0qx-dG-0Ko" firstAttribute="leading" secondItem="o6Y-IL-QvL" secondAttribute="leading" constant="74" id="dXg-fI-Ly3"/>
+                                    <constraint firstItem="vtW-om-JEH" firstAttribute="leading" secondItem="o6Y-IL-QvL" secondAttribute="leading" constant="101" id="ocN-j7-Evx"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gTo-eb-7az"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="o6Y-IL-QvL" firstAttribute="centerY" secondItem="7Hq-UY-sY4" secondAttribute="centerY" id="Jss-f2-aoK"/>
+                            <constraint firstItem="o6Y-IL-QvL" firstAttribute="top" secondItem="gTo-eb-7az" secondAttribute="top" constant="208" id="h5h-uI-Eog"/>
+                            <constraint firstItem="o6Y-IL-QvL" firstAttribute="centerX" secondItem="7Hq-UY-sY4" secondAttribute="centerX" id="nNd-Gr-SJ6"/>
+                            <constraint firstItem="o6Y-IL-QvL" firstAttribute="leading" secondItem="gTo-eb-7az" secondAttribute="leading" constant="62" id="p8s-FL-BOm"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="messageView" destination="o6Y-IL-QvL" id="3g8-4p-24n"/>

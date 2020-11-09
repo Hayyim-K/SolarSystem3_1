@@ -19,12 +19,12 @@ class RegistrationViewController: UIViewController {
     }
 
     @IBAction func showPopUp(_ sender: UIButton) {
-        let popUpVC = UIStoryboard(name: "StoryboardDanya", bundle: nil).instantiateViewController(withIdentifier: "popUp") as! PopUpRegistrationViewController // 1
+        let popUpVC = UIStoryboard(name: "StoryboardDanya", bundle: nil).instantiateViewController(withIdentifier: "popUp") as! PopUpRegistrationViewController
         
-        self.addChild(popUpVC) // 2
-        popUpVC.view.frame = self.view.frame  // 3
-        self.view.addSubview(popUpVC.view) // 4
+        self.addChild(popUpVC)
+        popUpVC.view.frame = self.view.frame
+        self.view.addSubview(popUpVC.view)
         
-        popUpVC.didMove(toParent: self) // 5
+        popUpVC.didMove(toParent: self) 
     }
 }

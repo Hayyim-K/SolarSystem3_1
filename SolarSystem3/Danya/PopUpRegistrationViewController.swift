@@ -25,12 +25,14 @@ class PopUpRegistrationViewController: UIViewController, UITextFieldDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
             NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
       }
+    @IBAction func closePopUp(_ sender: UIButton) {
+        moveOut()
+    }
        
     @IBAction func nextButtonPressed() {
         UserDataManager.dataManage.name = nameTextField.text!
         UserDataManager.dataManage.pass = passwordTextField.text!
-        
-        moveOut()
+
     }
     
     
